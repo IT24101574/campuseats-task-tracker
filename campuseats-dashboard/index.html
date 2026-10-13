@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CampusEats student meal ordering dashboard" />
+    <title>CampusEats Dashboard</title>
+  </head>
+  <body>
+    <div id="root"><p style="padding:2rem;font-family:sans-serif">Loading CampusEats...</p></div>
+    <script>
+      window.addEventListener("error", function (event) {
+        document.getElementById("root").innerHTML =
+          '<pre style="padding:2rem;color:#a00;white-space:pre-wrap">' +
+          event.message.replaceAll("<", "&lt;") +
+          "</pre>";
+      });
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

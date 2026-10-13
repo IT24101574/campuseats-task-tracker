@@ -141,3 +141,23 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Node / frontend
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+
+# .NET / API
+bin/
+obj/
+.vs/
+*.user
+
+# Local secrets (never commit)
+appsettings.Development.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
